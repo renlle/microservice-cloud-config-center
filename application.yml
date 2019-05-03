@@ -1,18 +1,18 @@
 ﻿spring:
-  profiles:
+  profiles:       #默认的,以下两种都不是的话只显示这部分
     active:
       - dev
 
 ---
 
 spring:
-  profiles: dev   # 开发环境
+  profiles: dev   # 开发环境,http://localhost:3344/application-dev.yml
   application:
     name: microservicecloud-config-dev
 
 ---
 
 spring:
-  profiles: test   # 测试环境
+  profiles: test   # 测试环境,http://localhost:3344/application-test.yml
   application:
     name: microservicecloud-config-test
